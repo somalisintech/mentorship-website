@@ -9,7 +9,7 @@ export default class CustomDocument extends Document {
   render() {
     return (
       <Html lang={'en'}>
-       <body>
+        <body>
           <Main />
           <NextScript />
         </body>
