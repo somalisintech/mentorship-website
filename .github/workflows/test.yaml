@@ -1,9 +1,9 @@
-name: Continuous Integration
+name: Test
 
 on: push
 
 jobs:
-  build_and_test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
