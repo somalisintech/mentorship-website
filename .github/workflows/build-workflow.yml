@@ -1,9 +1,9 @@
-name: Lint
+name: Build
 
 on: push
 
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -15,5 +15,5 @@ jobs:
           cache: 'yarn'
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
-      - name: Run Lint
-        run: yarn lint
+      - name: Run build
+        run: yarn build:static
