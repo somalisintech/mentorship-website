@@ -15,5 +15,5 @@ jobs:
           cache: 'yarn'
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
-      - name: Run Tests
-        run: yarn test --ci --colors
+      - name: Run Lint
+        run: yarn lint
