@@ -5,17 +5,16 @@ on: push
 job:
   build_and_test:
     runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version-file: '.nvmrc'
-        cache: 'yarn'
-    - run: yarn install --frozen-lockfile
-    - run: yarn lint
-    - run: yarn test --coverage
-    - uses: actions/upload-artifact@v3
-      with:
-        name: coverage
-        path: coverage
-
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - run: yarn lint
+      - run: yarn test --coverage
+      - uses: actions/upload-artifact@v3
+        with:
+          name: coverage
+          path: coverage
