@@ -1,3 +1,5 @@
+import { HelloWorld } from '../components/headers/HelloWorld/HelloWorld';
+
 export default function Home() {
-  return <h1>Hello World!</h1>;
+  return <HelloWorld />;
 }
