@@ -1,24 +1,16 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const nextJest = require('next/jest');
+
+const createJestConfig = nextJest({ dir: './' });
+
 /** @type {import('@jest/types').Config.InitialOptions} */
-module.exports = {
+const customJestConfig = {
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!**/_*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
-  transform: {
-    '^.+\\.(t|j)sx?$': [
-      '@swc/jest',
-      {
-        jsc: {
-          transform: {
-            react: {
-              runtime: 'automatic'
-            }
-          }
-        }
-      }
-    ]
-  },
-  transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
+  moduleDirectories: ['node_modules', '<rootDir>/'],
+  testEnvironment: 'jest-environment-jsdom',
   verbose: true,
   passWithNoTests: true
 };
+
+module.exports = createJestConfig(customJestConfig);

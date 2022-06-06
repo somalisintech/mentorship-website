@@ -8,23 +8,20 @@
     "build": "NEXT_TELEMETRY_DISABLED=1 next build",
     "build:static": "yarn build && next export",
     "start": "next start",
-    "lint": "eslint .",
+    "lint": "eslint --ignore-path .gitignore .",
     "test": "jest",
+    "test:ci": "jest --ci --colors",
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "^12.1.6",
+    "next": "latest",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@swc/core": "^1.2.197",
-    "@swc/jest": "^0.2.21",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.0",
-    "@types/jest": "^28.1.1",
-    "@types/node": "^17.0.40",
     "@types/react": "^18.0.12",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
