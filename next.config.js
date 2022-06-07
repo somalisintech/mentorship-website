@@ -8,6 +8,7 @@ const config = {
   compiler: {
     removeConsole: true
   },
+  swcMinify: true,
   webpack: (config, options) => {
     if (process.env.CYPRESS === 'true') {
       //Allows importing the global.css file in cypress/support/component.ts
