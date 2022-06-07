@@ -29,12 +29,18 @@
       "@/styles/*": [
         "styles/*"
       ]
-    }
+    },
+    "types": [
+      "node",
+      "@testing-library/jest-dom",
+      "cypress",
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "cypress"
   ],
   "exclude": [
     "node_modules"

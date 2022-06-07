@@ -1,0 +1,24 @@
+name: Cypress tests
+
+on: [ push ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎 Checkout repository
+        uses: actions/checkout@v3
+      - name: 🧪 Cypress test
+        uses: cypress-io/github-action@v4
+        with:
+          install-command: yarn --frozen-lockfile --silent
+          build: yarn build
+          start: yarn start
+          wait-on: 'http://localhost:3000'
+          record: true
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          # pass GitHub token to allow accurately detecting a build vs a re-run build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
