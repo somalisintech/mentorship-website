@@ -1,7 +1,15 @@
 describe('Navigation', { browser: 'chrome' }, () => {
-  it('should navigate to the home page', () => {
+  it('should display page text for each page', () => {
     cy.visit('/');
+    cy.contains('landing page', { matchCase: false });
 
-    cy.get('h1').contains(/hello world/i);
+    cy.visit('/about');
+    cy.contains('about page', { matchCase: false });
+
+    cy.visit('/mentors');
+    cy.contains('mentors page', { matchCase: false });
+
+    cy.visit('/profile');
+    cy.contains('user profile page', { matchCase: false });
   });
 });

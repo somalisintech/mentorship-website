@@ -1,5 +1,3 @@
-import { HelloWorld } from '@/components/headers/HelloWorld';
-
 export default function Home() {
-  return <HelloWorld />;
+  return <h1 className="my-auto text-4xl text-center">Landing page</h1>;
 }

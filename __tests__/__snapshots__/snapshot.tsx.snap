@@ -1,11 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render "Hello World!" on the homepage 1`] = `
+exports[`<About /> should render "About page" 1`] = `
 <div>
   <h1
     class="my-auto text-4xl text-center"
   >
-    Hello World!
+    About page
+  </h1>
+</div>
+`;
+
+exports[`<Home /> should render "Landing page" 1`] = `
+<div>
+  <h1
+    class="my-auto text-4xl text-center"
+  >
+    Landing page
+  </h1>
+</div>
+`;
+
+exports[`<Mentors /> should render "Mentors page" 1`] = `
+<div>
+  <h1
+    class="my-auto text-4xl text-center"
+  >
+    Mentors page
+  </h1>
+</div>
+`;
+
+exports[`<Profile /> should render "User profile page" 1`] = `
+<div>
+  <h1
+    class="my-auto text-4xl text-center"
+  >
+    User profile page
   </h1>
 </div>
 `;
