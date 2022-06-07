@@ -5,5 +5,3 @@ describe('Navigation', { browser: 'chrome' }, () => {
     cy.get('h1').contains(/hello world/i);
   });
 });
-
-export {};

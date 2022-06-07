@@ -33,14 +33,12 @@
     "types": [
       "node",
       "@testing-library/jest-dom",
-      "cypress",
+      "jest"
     ]
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "cypress"
+    "src"
   ],
   "exclude": [
     "node_modules"
