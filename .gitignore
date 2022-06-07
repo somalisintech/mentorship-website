@@ -48,3 +48,4 @@ cypress/screenshots
 
 # firebase
 .firebase
+firebase-debug.*
