@@ -45,3 +45,6 @@ yarn-error.log*
 cypress/downloads
 cypress/videos
 cypress/screenshots
+
+# firebase
+.firebase

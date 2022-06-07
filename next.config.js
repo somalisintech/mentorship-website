@@ -5,9 +5,6 @@ const { patchWebpackConfig } = require('next-global-css');
 const config = {
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
-  compiler: {
-    removeConsole: true
-  },
   swcMinify: true,
   webpack: (config, options) => {
     if (process.env.CYPRESS === 'true') {
