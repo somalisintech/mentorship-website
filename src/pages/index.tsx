@@ -1,3 +1,3 @@
 export default function Home() {
-  return <h1 className="my-auto text-4xl text-center">Landing page</h1>;
+  return <h1 className="my-auto text-center text-4xl">Landing page</h1>;
 }

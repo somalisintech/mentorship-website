@@ -1,3 +1,3 @@
 export default function About() {
-  return <h1 className="my-auto text-4xl text-center">About page</h1>;
+  return <h1 className="my-auto text-center text-4xl">About page</h1>;
 }
