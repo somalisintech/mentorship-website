@@ -3,7 +3,7 @@
 exports[`<About /> should render "About page" 1`] = `
 <div>
   <h1
-    class="my-auto text-4xl text-center"
+    class="my-auto text-center text-4xl"
   >
     About page
   </h1>
@@ -13,7 +13,7 @@ exports[`<About /> should render "About page" 1`] = `
 exports[`<Home /> should render "Landing page" 1`] = `
 <div>
   <h1
-    class="my-auto text-4xl text-center"
+    class="my-auto text-center text-4xl"
   >
     Landing page
   </h1>
@@ -23,7 +23,7 @@ exports[`<Home /> should render "Landing page" 1`] = `
 exports[`<Mentors /> should render "Mentors page" 1`] = `
 <div>
   <h1
-    class="my-auto text-4xl text-center"
+    class="my-auto text-center text-4xl"
   >
     Mentors page
   </h1>
@@ -33,7 +33,7 @@ exports[`<Mentors /> should render "Mentors page" 1`] = `
 exports[`<Profile /> should render "User profile page" 1`] = `
 <div>
   <h1
-    class="my-auto text-4xl text-center"
+    class="my-auto text-center text-4xl"
   >
     User profile page
   </h1>
